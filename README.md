@@ -54,8 +54,8 @@ Przed rozpoczęciem upewnij się, że masz zainstalowane poniższe komponenty na
    Skopiuj repozytorium na swój lokalny komputer:
    
    ```bash
-   git clone https://github.com/yourusername/bombaclat-eeg.git
-   cd bombaclat-eeg
+   git clone https://github.com/kitajusSus/neuron.git
+   cd neuron
    ```
 Tworzenie Środowiska Wirtualnego (Opcjonalnie)
 
