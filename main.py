@@ -29,10 +29,10 @@ from neuron_eeg import (
 from rysowanie_wyników import plot_waveform_with_classifications, plot_reconstruction
 
 def main():
-    print("Witaj w programie EEG Analyzer!")
+    print("Witaj w programie BOMBACLAT KNFM NEURON EEG ANALIZER!")
     print("Wybierz opcję:")
-    print("1. Trenowanie modelu na nowych danych")
-    print("2. Użycie istniejącego modelu do analizy nowych danych")
+    print("1. Trenowanie modelu na nowych danych (zalecane)")
+    print("2. Użycie istniejącego modelu do analizy nowych danych[WERSJA BETA - NIE URUCHOMIONA - PLACEHOLDER]")
     choice = input("Twój wybór (1/2): ").strip()
 
     if choice == '1':

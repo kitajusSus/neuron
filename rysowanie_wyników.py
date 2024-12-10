@@ -1,10 +1,10 @@
+
 # rysowanie_wyników.py
 
-import os
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
+import numpy as np
 
 def plot_waveform_with_classifications(data, event_labels, group_size):
     """
@@ -64,4 +64,54 @@ def plot_waveform_with_classifications(data, event_labels, group_size):
         fig.delaxes(axs[idx])
     
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # Adjust layout to accommodate suptitle
+    plt.show()
+
+def plot_reconstruction(df, reconstructed, loss, dilated_anomalies, labeled_regions, num_regions, threshold):
+    """
+    Rysowanie wyników rekonstrukcji i wykrywania anomalii
+    """
+    # Oryginalne dane i odtworzone dane
+    plt.figure(figsize=(14, 7))
+    plt.plot(df.index, df['C4'], label='Original Data', color='blue', alpha=0.6)
+    plt.plot(df.index, reconstructed, label='Reconstructed Data', color='green', alpha=0.6)
+
+    # Anomaly Regions Plot
+    colors = plt.cm.rainbow(np.linspace(0, 1, num_regions+1))
+    y_min, y_max = df['C4'].min(), df['C4'].max()
+
+    for i in range(1, num_regions+1):
+        region_mask = labeled_regions == i
+        if region_mask.any():
+            plt.fill_between(df.index[region_mask], 
+                            [y_min] * sum(region_mask), 
+                            [y_max] * sum(region_mask),
+                            color=colors[i], alpha=0.3,
+                            label=f'Anomaly Region {i}')
+
+    plt.title('EEG Signal Anomaly Detection')
+    plt.xlabel('Time')
+    plt.ylabel('Amplitude')
+    plt.grid(True)
+    plt.legend()
+    plt.show()
+
+    # Reconstruction Error Plot
+    plt.figure(figsize=(15, 4))
+    plt.plot(df.index, loss, label='Reconstruction Error', color='purple')
+    plt.axhline(y=threshold, color='r', linestyle='--', label='Threshold')
+
+    loss_max = loss.max()
+    for i in range(2, num_regions+1):
+        region_mask = labeled_regions == i
+        if region_mask.any():
+            plt.fill_between(df.index[region_mask], 
+                            [0] * sum(region_mask), 
+                            [loss_max] * sum(region_mask),
+                            color=colors[i], alpha=0.3)
+
+    plt.title('Reconstruction Error with Anomaly Regions')
+    plt.xlabel('Time')
+    plt.ylabel('Error')
+    plt.grid(True)
+    plt.legend()
     plt.show()

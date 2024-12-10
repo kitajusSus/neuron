@@ -2,6 +2,11 @@
 # model.py
 
 import os
+"""
+DOKLADNIE WIEM ZE KOMENDA NIZEJ MOZE MIEC WPLYW NA BEZPIECZENSTWO DZIALANIA
+ALE NIE WIEM JAK INACZJE ZROBIC BY IMPORT OS SIE NIE WYSYPAŁ, 
+DZIĘKUJE BARDZO ZA WYROZUMIAŁOSC 
+"""
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import pandas as pd
 import numpy as np
@@ -34,7 +39,11 @@ class MATIMOSIEJ(nn.Module):
         return decoded, encoded
 
 def load_data(file_path):
-    data = pd.read_csv(file_path, sep=';', header=None)
+    data = pd.read_csv(file_path, sep=';', header=None) #jeśli dane są zapisane w csv a miedzy nimi jest inny separator niż ;
+    """
+    jeśli miedzy danymi jest inny separator niż ; to zmien 'sep=' na np. sep = '\t' (jesli dane odziela tabulator), dla innych ...
+    separatorów nie wiem sprawdz w chatgpt czy cos 
+    """
     
     def clean_and_convert(value):
         if isinstance(value, str):
