@@ -10,7 +10,6 @@ import re
 CSV_FILE = '/content/kaimordai.csv'
 TAG_FILE = '/content/kai-tw.obci.tag'
 FS = 1000  # Częstotliwość próbkowania EMG w Hz (częsta dla EMG)
-
 # --- Funkcja do Wczytywania i Parsowania Tagów ---
 def load_and_parse_tags(tag_filepath):
     """
@@ -32,7 +31,8 @@ def load_and_parse_tags(tag_filepath):
             # Dodatkowe czyszczenie, np. "neutralna_baseline" -> "neutralna"
             if "baseline" in emotion:
                 emotion = "neutralna"
-            
+            # ludzie kurwa to podstawy data science takie przygotowanie danych ładne 
+            # albo chujowi studenci albo skandaliczni prowadzący bez znajomosci tematu
             tag_data.append({'emotion': emotion, 'start_sec': position, 'duration_sec': duration})
         except ET.ParseError:
             print(f"Ostrzeżenie: Nie można sparsować linii: {line}")
@@ -53,7 +53,9 @@ def calculate_emg_features(signal_segment):
     # Obwiednia sygnału (z użyciem transformaty Hilberta) i średnia amplituda
     envelope = np.abs(hilbert(signal_segment))
     amplitude = np.mean(envelope)
-
+    # transformate this, transformate that, 
+    # transformate dis nuts in your mouth elo
+    ## pierdol sie hilbert, stary cie nie kocha
     return {'variance': variance, 'amplitude': amplitude}
 
 # --- Główna Funkcja Analizy Danych EMG dla Emocji ---
@@ -65,6 +67,7 @@ def analyze_emg_for_emotions(csv_file, tag_file, fs):
     """
     # 1. Wczytanie danych EMG
     df_emg = pd.read_csv(csv_file, header=None) # Zakładam brak nagłówka
+    print(df_emg.head()) #sztuczka tzw: firmuweczka by komus pokazac jak wyglada DATAFRAME by ktos inny mógł na tym  pracować 
     # Automatyczne wykrycie kanałów EMG (np. kolumny 0, 1, 2)
     # Możemy nadać im bardziej opisowe nazwy, jeśli wiemy, co reprezentują
     channels = [f'Mięsień {i+1}' for i in range(df_emg.shape[1])]
@@ -182,7 +185,7 @@ def plot_emg_results(results_df, metric_col, title_suffix, ylabel):
 
 # --- Główna Sekwencja Wykonania dla Zadania z Emocjami ---
 if __name__ == "__main__":
-    print("--- Analiza Aktywności Mięśni Twarzy w Reakcji na Emocje ---")
+    print("---ANALIZATOR SRAKI JEBAC  python ---")
 
     # Przeprowadzenie analizy
     emotions_results_df, raw_avg_features_df = analyze_emg_for_emotions(CSV_FILE, TAG_FILE, FS)
@@ -227,15 +230,15 @@ if __name__ == "__main__":
             # Np. "Jeśli Mięsień 1 jest najbardziej aktywny dla radości..."
             most_active_var = variance_sorted.iloc[0]['Mięsień']
             max_var_increase = variance_sorted.iloc[0]['Procentowy Wzrost Wariancji']
-            
+           ## same shit for bigas 
             most_active_amp = amplitude_sorted.iloc[0]['Mięsień']
             max_amp_increase = amplitude_sorted.iloc[0]['Procentowy Wzrost Amplitudy']
 
             print(f"  -> Ogólnie dla emocji '{emotion.capitalize()}' największy wzrost aktywności (wariancji) odnotowano w {most_active_var} ({max_var_increase:.2f}%), a amplitudy w {most_active_amp} ({max_amp_increase:.2f}%).")
             # Możesz dalej rozwinąć tę interpretację na podstawie, które mięśnie powinny być aktywne dla danych emocji
-            # (np. Mięśnie podnoszące kąciki ust dla radości, etc. - wymaga wiedzy domenowej).
+            # (np. Mięśnie podnoszące kąciki ust dla radości, etc. - wymaga wiedzy tzw: domenowej).
 
     else:
-        print("\nAnaliza nie powiodła się lub brak wyników do interpretacji.")
+        print("\nAnaliza serdecznie w pizde cos jest nie tak")
 
-    print("\n--- Koniec analizy Zadan:ia z Emocjami ---")
+    print("\n--- generalnie fanum tak obiecałas 3 gałki lodów na łeb bo skoro to widzisz to działa elo")

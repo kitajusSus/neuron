@@ -30,7 +30,7 @@ def simulate_emg_data():
     all_labels.extend(['Neutral_Baseline'] * SAMPLES_PER_SEGMENT)
 
     # 2. Dane dla poszczególnych emocji (z 4 powtórzeniami każda)
-    # Symulujemy, że niektóre mięśnie są bardziej aktywne dla danych emocji
+    # Symuluje, że niektóre mięśnie są bardziej aktywne dla danych emocji
     emotion_scales = {
         'Radość':   {'Mięsień A': 0.2, 'Mięsień B': 0.1, 'Mięsień C': 0.07},
         'Smutek':   {'Mięsień A': 0.08, 'Mięsień B': 0.25, 'Mięsień C': 0.1},
@@ -206,4 +206,4 @@ if __name__ == "__main__":
             print(f"  -> Aktywność dla emocji '{emotion}' jest niska lub zbliżona do stanu neutralnego dla większości mięśni.")
             
     print("\n DANE SYMULOWANE LOSOWANE Z PARAMETRAMI 'TENDENCJI ' DLA ROZNYCH EMOCJI DLA MIESNI")
-    print("gdzie poziomy aktywności mięśni zostały celowo zaprogramowane, aby wykazać różnice.")
+    print("SKIBIDI DSKIDBII SKIBIDI , aby wykazać różnice.")
