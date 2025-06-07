@@ -1,0 +1,336 @@
+1.1297 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pygame', 'sounddevice', 'PTB', 'pyo'] (in that order).
+1.5132 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.6072 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f2642789390>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f26420c7d30>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.6072 	EXP 	window1: recordFrameIntervals = False
+4.7753 	EXP 	window1: recordFrameIntervals = True
+5.4265 	WARNING 	t of last frame was 20.06ms (=1/49)
+5.7263 	WARNING 	t of last frame was 20.26ms (=1/49)
+5.7764 	WARNING 	t of last frame was 20.06ms (=1/49)
+5.8269 	WARNING 	t of last frame was 20.46ms (=1/48)
+6.1769 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+6.4396 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.5035 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+6.5080 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='X', units='norm', win=Window(...), wrapWidth=1)
+6.5096 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 2. ]), texRes=128, units='norm', win=Window(...))
+6.5099 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='norm', win=Window(...), wrapWidth=1)
+6.5137 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Dziękuję za udział w eksperymencie', units='norm', win=Window(...), wrapWidth=1)
+6.5180 	EXP 	text: autoDraw = True
+7.7033 	DATA 	Keypress: space
+7.7154 	EXP 	Imported zdjecia.csv as conditions, 14 conditions, 1 params
+7.7158 	EXP 	Created sequence: random, trialTypes=14, nReps=2, seed=None
+7.7160 	EXP 	New trial (rep=0, index=0): OrderedDict([('zdj', 'radosc1.bmp')])
+7.7285 	EXP 	text: autoDraw = False
+7.7285 	EXP 	image: image = 'radosc1.bmp'
+7.7285 	EXP 	text_2: autoDraw = True
+9.9957 	EXP 	image: autoDraw = True
+10.0074 	EXP 	text_2: autoDraw = False
+13.9940 	EXP 	text_4: autoDraw = True
+14.0064 	EXP 	image: autoDraw = False
+15.9940 	EXP 	New trial (rep=0, index=1): OrderedDict([('zdj', 'strach2.bmp')])
+16.0085 	EXP 	text_4: autoDraw = False
+16.0085 	EXP 	text_2: autoDraw = False
+16.0085 	EXP 	image: autoDraw = False
+16.0085 	EXP 	text_4: autoDraw = False
+16.0085 	EXP 	image: image = 'strach2.bmp'
+16.0085 	EXP 	text_2: autoDraw = True
+18.2420 	EXP 	image: autoDraw = True
+18.2580 	EXP 	text_2: autoDraw = False
+22.2445 	EXP 	image: autoDraw = False
+22.2445 	EXP 	text_4: autoDraw = True
+24.2417 	EXP 	New trial (rep=0, index=2): OrderedDict([('zdj', 'neutralna2.bmp')])
+24.2574 	EXP 	text_4: autoDraw = False
+24.2574 	EXP 	text_2: autoDraw = False
+24.2574 	EXP 	image: autoDraw = False
+24.2574 	EXP 	text_4: autoDraw = False
+24.2574 	EXP 	image: image = 'neutralna2.bmp'
+24.2574 	EXP 	text_2: autoDraw = True
+26.9116 	EXP 	image: autoDraw = True
+26.9266 	EXP 	text_2: autoDraw = False
+30.9079 	EXP 	text_4: autoDraw = True
+30.9303 	EXP 	image: autoDraw = False
+32.8932 	EXP 	New trial (rep=0, index=3): OrderedDict([('zdj', 'neutralna1.bmp')])
+32.9072 	EXP 	text_4: autoDraw = False
+32.9072 	EXP 	text_2: autoDraw = False
+32.9072 	EXP 	image: autoDraw = False
+32.9072 	EXP 	text_4: autoDraw = False
+32.9072 	EXP 	image: image = 'neutralna1.bmp'
+32.9072 	EXP 	text_2: autoDraw = True
+35.6933 	EXP 	image: autoDraw = True
+35.7078 	EXP 	text_2: autoDraw = False
+39.6923 	EXP 	text_4: autoDraw = True
+39.7070 	EXP 	image: autoDraw = False
+41.6920 	EXP 	New trial (rep=0, index=4): OrderedDict([('zdj', 'smutek2.bmp')])
+41.7071 	EXP 	text_4: autoDraw = False
+41.7071 	EXP 	text_2: autoDraw = False
+41.7071 	EXP 	image: autoDraw = False
+41.7071 	EXP 	text_4: autoDraw = False
+41.7071 	EXP 	image: image = 'smutek2.bmp'
+41.7071 	EXP 	text_2: autoDraw = True
+43.9742 	EXP 	image: autoDraw = True
+43.9915 	EXP 	text_2: autoDraw = False
+47.9735 	EXP 	image: autoDraw = False
+47.9735 	EXP 	text_4: autoDraw = True
+49.9585 	EXP 	New trial (rep=0, index=5): OrderedDict([('zdj', 'strach1.bmp')])
+49.9738 	EXP 	text_4: autoDraw = False
+49.9738 	EXP 	text_2: autoDraw = False
+49.9738 	EXP 	image: autoDraw = False
+49.9738 	EXP 	text_4: autoDraw = False
+49.9738 	EXP 	image: image = 'strach1.bmp'
+49.9738 	EXP 	text_2: autoDraw = True
+52.4783 	EXP 	image: autoDraw = True
+52.4916 	EXP 	text_2: autoDraw = False
+56.4750 	EXP 	text_4: autoDraw = True
+56.4922 	EXP 	image: autoDraw = False
+58.4591 	EXP 	New trial (rep=0, index=6): OrderedDict([('zdj', 'smutek1.bmp')])
+58.4743 	EXP 	text_4: autoDraw = False
+58.4743 	EXP 	text_2: autoDraw = False
+58.4743 	EXP 	image: autoDraw = False
+58.4743 	EXP 	text_4: autoDraw = False
+58.4743 	EXP 	image: image = 'smutek1.bmp'
+58.4743 	EXP 	text_2: autoDraw = True
+61.4444 	EXP 	image: autoDraw = True
+61.4582 	EXP 	text_2: autoDraw = False
+65.4460 	EXP 	image: autoDraw = False
+65.4460 	EXP 	text_4: autoDraw = True
+67.4421 	EXP 	New trial (rep=0, index=7): OrderedDict([('zdj', 'zlosc1.bmp')])
+67.4582 	EXP 	text_4: autoDraw = False
+67.4582 	EXP 	text_2: autoDraw = False
+67.4582 	EXP 	image: autoDraw = False
+67.4582 	EXP 	text_4: autoDraw = False
+67.4582 	EXP 	image: image = 'zlosc1.bmp'
+67.4582 	EXP 	text_2: autoDraw = True
+70.0110 	EXP 	image: autoDraw = True
+70.0252 	EXP 	text_2: autoDraw = False
+74.0088 	EXP 	text_4: autoDraw = True
+74.0250 	EXP 	image: autoDraw = False
+76.0097 	EXP 	New trial (rep=0, index=8): OrderedDict([('zdj', 'radosc2.bmp')])
+76.0241 	EXP 	text_4: autoDraw = False
+76.0241 	EXP 	text_2: autoDraw = False
+76.0241 	EXP 	image: autoDraw = False
+76.0241 	EXP 	text_4: autoDraw = False
+76.0241 	EXP 	image: image = 'radosc2.bmp'
+76.0241 	EXP 	text_2: autoDraw = True
+78.7605 	EXP 	image: autoDraw = True
+78.7750 	EXP 	text_2: autoDraw = False
+82.7587 	EXP 	text_4: autoDraw = True
+82.7745 	EXP 	image: autoDraw = False
+84.7592 	EXP 	New trial (rep=0, index=9): OrderedDict([('zdj', 'zaskoczenie1.bmp')])
+84.7749 	EXP 	text_4: autoDraw = False
+84.7749 	EXP 	text_2: autoDraw = False
+84.7749 	EXP 	image: autoDraw = False
+84.7749 	EXP 	text_4: autoDraw = False
+84.7749 	EXP 	image: image = 'zaskoczenie1.bmp'
+84.7749 	EXP 	text_2: autoDraw = True
+87.2758 	EXP 	image: autoDraw = True
+87.3120 	EXP 	text_2: autoDraw = False
+91.2829 	EXP 	image: autoDraw = False
+91.2829 	EXP 	text_4: autoDraw = True
+93.2811 	EXP 	New trial (rep=0, index=10): OrderedDict([('zdj', 'wstret1.bmp')])
+93.2919 	EXP 	text_4: autoDraw = False
+93.2919 	EXP 	text_2: autoDraw = False
+93.2919 	EXP 	image: autoDraw = False
+93.2919 	EXP 	text_4: autoDraw = False
+93.2919 	EXP 	image: image = 'wstret1.bmp'
+93.2919 	EXP 	text_2: autoDraw = True
+95.4107 	EXP 	image: autoDraw = True
+95.4256 	EXP 	text_2: autoDraw = False
+99.4078 	EXP 	image: autoDraw = False
+99.4078 	EXP 	text_4: autoDraw = True
+101.3942 	EXP 	New trial (rep=0, index=11): OrderedDict([('zdj', 'wstret2.bmp')])
+101.4104 	EXP 	text_4: autoDraw = False
+101.4104 	EXP 	text_2: autoDraw = False
+101.4104 	EXP 	image: autoDraw = False
+101.4104 	EXP 	text_4: autoDraw = False
+101.4104 	EXP 	image: image = 'wstret2.bmp'
+101.4104 	EXP 	text_2: autoDraw = True
+103.9945 	EXP 	image: autoDraw = True
+104.0087 	EXP 	text_2: autoDraw = False
+107.9925 	EXP 	text_4: autoDraw = True
+108.0137 	EXP 	image: autoDraw = False
+109.9932 	EXP 	New trial (rep=0, index=12): OrderedDict([('zdj', 'zlosc2.bmp')])
+110.0082 	EXP 	text_4: autoDraw = False
+110.0082 	EXP 	text_2: autoDraw = False
+110.0082 	EXP 	image: autoDraw = False
+110.0082 	EXP 	text_4: autoDraw = False
+110.0082 	EXP 	image: image = 'zlosc2.bmp'
+110.0082 	EXP 	text_2: autoDraw = True
+112.2771 	EXP 	image: autoDraw = True
+112.2924 	EXP 	text_2: autoDraw = False
+116.2828 	EXP 	image: autoDraw = False
+116.2828 	EXP 	text_4: autoDraw = True
+118.2768 	EXP 	New trial (rep=0, index=13): OrderedDict([('zdj', 'zaskoczenie2.bmp')])
+118.2918 	EXP 	text_4: autoDraw = False
+118.2918 	EXP 	text_2: autoDraw = False
+118.2918 	EXP 	image: autoDraw = False
+118.2918 	EXP 	text_4: autoDraw = False
+118.2918 	EXP 	image: image = 'zaskoczenie2.bmp'
+118.2918 	EXP 	text_2: autoDraw = True
+120.3592 	EXP 	image: autoDraw = True
+120.3756 	EXP 	text_2: autoDraw = False
+124.3579 	EXP 	image: autoDraw = False
+124.3579 	EXP 	text_4: autoDraw = True
+126.3434 	EXP 	New trial (rep=1, index=0): OrderedDict([('zdj', 'radosc1.bmp')])
+126.3587 	EXP 	text_4: autoDraw = False
+126.3587 	EXP 	text_2: autoDraw = False
+126.3587 	EXP 	image: autoDraw = False
+126.3587 	EXP 	text_4: autoDraw = False
+126.3587 	EXP 	image: image = 'radosc1.bmp'
+126.3587 	EXP 	text_2: autoDraw = True
+129.0928 	EXP 	image: autoDraw = True
+129.1147 	EXP 	text_2: autoDraw = False
+133.0914 	EXP 	image: autoDraw = False
+133.0914 	EXP 	text_4: autoDraw = True
+135.0767 	EXP 	New trial (rep=1, index=1): OrderedDict([('zdj', 'smutek1.bmp')])
+135.0926 	EXP 	text_4: autoDraw = False
+135.0926 	EXP 	text_2: autoDraw = False
+135.0926 	EXP 	image: autoDraw = False
+135.0926 	EXP 	text_4: autoDraw = False
+135.0926 	EXP 	image: image = 'smutek1.bmp'
+135.0926 	EXP 	text_2: autoDraw = True
+137.5783 	EXP 	image: autoDraw = True
+137.5931 	EXP 	text_2: autoDraw = False
+141.5832 	EXP 	text_4: autoDraw = True
+141.5915 	EXP 	image: autoDraw = False
+143.5767 	EXP 	New trial (rep=1, index=2): OrderedDict([('zdj', 'wstret1.bmp')])
+143.5917 	EXP 	text_4: autoDraw = False
+143.5917 	EXP 	text_2: autoDraw = False
+143.5917 	EXP 	image: autoDraw = False
+143.5917 	EXP 	text_4: autoDraw = False
+143.5917 	EXP 	image: image = 'wstret1.bmp'
+143.5917 	EXP 	text_2: autoDraw = True
+145.7599 	EXP 	image: autoDraw = True
+145.7765 	EXP 	text_2: autoDraw = False
+149.7604 	EXP 	image: autoDraw = False
+149.7604 	EXP 	text_4: autoDraw = True
+151.7621 	EXP 	New trial (rep=1, index=3): OrderedDict([('zdj', 'neutralna2.bmp')])
+151.7756 	EXP 	text_4: autoDraw = False
+151.7756 	EXP 	text_2: autoDraw = False
+151.7756 	EXP 	image: autoDraw = False
+151.7756 	EXP 	text_4: autoDraw = False
+151.7756 	EXP 	image: image = 'neutralna2.bmp'
+151.7756 	EXP 	text_2: autoDraw = True
+153.7655 	EXP 	image: autoDraw = True
+153.7792 	EXP 	text_2: autoDraw = False
+157.7601 	EXP 	text_4: autoDraw = True
+157.7822 	EXP 	image: autoDraw = False
+159.7604 	EXP 	New trial (rep=1, index=4): OrderedDict([('zdj', 'radosc2.bmp')])
+159.7793 	EXP 	text_4: autoDraw = False
+159.7793 	EXP 	text_2: autoDraw = False
+159.7793 	EXP 	image: autoDraw = False
+159.7793 	EXP 	text_4: autoDraw = False
+159.7793 	EXP 	image: image = 'radosc2.bmp'
+159.7793 	EXP 	text_2: autoDraw = True
+161.9597 	EXP 	image: autoDraw = True
+161.9767 	EXP 	text_2: autoDraw = False
+165.9587 	EXP 	image: autoDraw = False
+165.9587 	EXP 	text_4: autoDraw = True
+167.9461 	EXP 	New trial (rep=1, index=5): OrderedDict([('zdj', 'wstret2.bmp')])
+167.9639 	EXP 	text_4: autoDraw = False
+167.9639 	EXP 	text_2: autoDraw = False
+167.9639 	EXP 	image: autoDraw = False
+167.9639 	EXP 	text_4: autoDraw = False
+167.9639 	EXP 	image: image = 'wstret2.bmp'
+167.9639 	EXP 	text_2: autoDraw = True
+170.9263 	EXP 	image: autoDraw = True
+170.9434 	EXP 	text_2: autoDraw = False
+174.9256 	EXP 	image: autoDraw = False
+174.9256 	EXP 	text_4: autoDraw = True
+176.9113 	EXP 	New trial (rep=1, index=6): OrderedDict([('zdj', 'zaskoczenie1.bmp')])
+176.9288 	EXP 	text_4: autoDraw = False
+176.9288 	EXP 	text_2: autoDraw = False
+176.9288 	EXP 	image: autoDraw = False
+176.9288 	EXP 	text_4: autoDraw = False
+176.9288 	EXP 	image: image = 'zaskoczenie1.bmp'
+176.9288 	EXP 	text_2: autoDraw = True
+179.2864 	EXP 	image: autoDraw = True
+179.2934 	EXP 	text_2: autoDraw = False
+183.2770 	EXP 	text_4: autoDraw = True
+183.3005 	EXP 	image: autoDraw = False
+185.2787 	EXP 	New trial (rep=1, index=7): OrderedDict([('zdj', 'strach1.bmp')])
+185.3013 	EXP 	text_4: autoDraw = False
+185.3013 	EXP 	text_2: autoDraw = False
+185.3013 	EXP 	image: autoDraw = False
+185.3013 	EXP 	text_4: autoDraw = False
+185.3013 	EXP 	image: image = 'strach1.bmp'
+185.3013 	EXP 	text_2: autoDraw = True
+187.3444 	EXP 	image: autoDraw = True
+187.3686 	EXP 	text_2: autoDraw = False
+191.3426 	EXP 	image: autoDraw = False
+191.3426 	EXP 	text_4: autoDraw = True
+193.3267 	EXP 	New trial (rep=1, index=8): OrderedDict([('zdj', 'strach2.bmp')])
+193.3433 	EXP 	text_4: autoDraw = False
+193.3433 	EXP 	text_2: autoDraw = False
+193.3433 	EXP 	image: autoDraw = False
+193.3433 	EXP 	text_4: autoDraw = False
+193.3433 	EXP 	image: image = 'strach2.bmp'
+193.3433 	EXP 	text_2: autoDraw = True
+196.3128 	EXP 	image: autoDraw = True
+196.3283 	EXP 	text_2: autoDraw = False
+200.3107 	EXP 	text_4: autoDraw = True
+200.3358 	EXP 	image: autoDraw = False
+202.3107 	EXP 	New trial (rep=1, index=9): OrderedDict([('zdj', 'smutek2.bmp')])
+202.3274 	EXP 	text_4: autoDraw = False
+202.3274 	EXP 	text_2: autoDraw = False
+202.3274 	EXP 	image: autoDraw = False
+202.3274 	EXP 	text_4: autoDraw = False
+202.3274 	EXP 	image: image = 'smutek2.bmp'
+202.3274 	EXP 	text_2: autoDraw = True
+204.5834 	EXP 	image: autoDraw = True
+204.6031 	EXP 	text_2: autoDraw = False
+208.5723 	EXP 	text_4: autoDraw = True
+208.5803 	EXP 	image: autoDraw = False
+210.5599 	EXP 	New trial (rep=1, index=10): OrderedDict([('zdj', 'zlosc2.bmp')])
+210.5762 	EXP 	text_4: autoDraw = False
+210.5762 	EXP 	text_2: autoDraw = False
+210.5762 	EXP 	image: autoDraw = False
+210.5762 	EXP 	text_4: autoDraw = False
+210.5762 	EXP 	image: image = 'zlosc2.bmp'
+210.5762 	EXP 	text_2: autoDraw = True
+212.8514 	EXP 	image: autoDraw = True
+212.8748 	EXP 	text_2: autoDraw = False
+216.8442 	EXP 	text_4: autoDraw = True
+216.8671 	EXP 	image: autoDraw = False
+218.8282 	EXP 	New trial (rep=1, index=11): OrderedDict([('zdj', 'zaskoczenie2.bmp')])
+218.8433 	EXP 	text_4: autoDraw = False
+218.8433 	EXP 	text_2: autoDraw = False
+218.8433 	EXP 	image: autoDraw = False
+218.8433 	EXP 	text_4: autoDraw = False
+218.8433 	EXP 	image: image = 'zaskoczenie2.bmp'
+218.8433 	EXP 	text_2: autoDraw = True
+220.8940 	EXP 	image: autoDraw = True
+220.9151 	EXP 	text_2: autoDraw = False
+224.8925 	EXP 	image: autoDraw = False
+224.8925 	EXP 	text_4: autoDraw = True
+226.8829 	EXP 	New trial (rep=1, index=12): OrderedDict([('zdj', 'neutralna1.bmp')])
+226.8936 	EXP 	text_4: autoDraw = False
+226.8936 	EXP 	text_2: autoDraw = False
+226.8936 	EXP 	image: autoDraw = False
+226.8936 	EXP 	text_4: autoDraw = False
+226.8936 	EXP 	image: image = 'neutralna1.bmp'
+226.8936 	EXP 	text_2: autoDraw = True
+229.2107 	EXP 	image: autoDraw = True
+229.2278 	EXP 	text_2: autoDraw = False
+233.2118 	EXP 	image: autoDraw = False
+233.2118 	EXP 	text_4: autoDraw = True
+235.2137 	EXP 	New trial (rep=1, index=13): OrderedDict([('zdj', 'zlosc1.bmp')])
+235.2270 	EXP 	text_4: autoDraw = False
+235.2270 	EXP 	text_2: autoDraw = False
+235.2270 	EXP 	image: autoDraw = False
+235.2270 	EXP 	text_4: autoDraw = False
+235.2270 	EXP 	image: image = 'zlosc1.bmp'
+235.2270 	EXP 	text_2: autoDraw = True
+237.6804 	EXP 	image: autoDraw = True
+237.7145 	EXP 	text_2: autoDraw = False
+241.6930 	EXP 	image: autoDraw = False
+241.6930 	EXP 	text_4: autoDraw = True
+243.6932 	EXP 	text_4: autoDraw = False
+243.6932 	EXP 	text_2: autoDraw = False
+243.6932 	EXP 	image: autoDraw = False
+243.6932 	EXP 	text_4: autoDraw = False
+243.6932 	EXP 	text_3: autoDraw = True
+263.9735 	DATA 	Keypress: space
+264.8734 	DATA 	Keypress: escape
+264.8881 	EXP 	window1: mouseVisible = True

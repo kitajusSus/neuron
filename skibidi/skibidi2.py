@@ -6,9 +6,9 @@ from scipy.signal import hilbert
 import xml.etree.ElementTree as ET
 import re
 
-# --- Konfiguracja Plików i Parametry ---
-CSV_FILE = '/content/kaimordai.csv'
-TAG_FILE = '/content/kai-tw.obci.tag'
+# --- Konfiguracja Plików i Parametry -
+CSV_FILE = 'dane/kai-tw.csv'
+TAG_FILE = 'dane/kai-tw.obci.tag'
 FS = 1000  # Częstotliwość próbkowania EMG w Hz (częsta dla EMG)
 # --- Funkcja do Wczytywania i Parsowania Tagów ---
 def load_and_parse_tags(tag_filepath):
@@ -30,7 +30,7 @@ def load_and_parse_tags(tag_filepath):
             emotion = re.sub(r'\d+\.bmp', '', name).strip().lower()
             # Dodatkowe czyszczenie, np. "neutralna_baseline" -> "neutralna"
             if "baseline" in emotion:
-                emotion = "neutralna"
+                emotion = "TW!- internetowysen"  ## kitajj - tutaj wpisz neutralna
             # ludzie kurwa to podstawy data science takie przygotowanie danych ładne 
             # albo chujowi studenci albo skandaliczni prowadzący bez znajomosci tematu
             tag_data.append({'emotion': emotion, 'start_sec': position, 'duration_sec': duration})
@@ -122,13 +122,13 @@ def analyze_emg_for_emotions(csv_file, tag_file, fs):
     results_list = []
     
     # Pobierz wartości bazowe dla "neutralna"
-    neutral_data = averaged_features.get('neutralna', {})
+    neutral_data = averaged_features.get('TW!: internetowysen', {}) # kitajj - tutaj tez popraw 
     if not neutral_data:
         print("Ostrzeżenie: Brak tagu 'neutralna' lub danych dla niego. Nie można obliczyć procentowego wzrostu.")
         return pd.DataFrame(), pd.DataFrame() # Zwróć puste DataFrame
 
     for emotion, channels_data in averaged_features.items():
-        if emotion == 'neutralna':
+        if emotion == 'TW!: internetowysen':  # kitajj - tutaj tez popraw
             continue # Pomiń samą emocję neutralną w wynikach wzrostu
 
         for ch, features in channels_data.items():
